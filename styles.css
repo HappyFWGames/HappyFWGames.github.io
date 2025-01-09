@@ -1,0 +1,208 @@
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-image: url('images/background.jpg'); /* 设置背景图片，需将图片放在images文件夹下，可根据实际更换图片路径和图片 */
+    background-size: cover; /* 让背景图片覆盖整个页面 */
+    background-position: center; /* 图片居中显示 */
+    background-attachment: fixed; /* 固定背景，页面滚动时背景不动 */
+}
+
+/* 头部导航栏样式 */
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景，使其在背景图上更清晰易读 */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: rgba(0, 0, 0, 0.8); /* 鼠标悬停或激活时背景颜色加深 */
+}
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.line {
+    background-color: white;
+    height: 3px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+/* 公司简介样式 */
+/* 联系我们样式 */
+#about {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* 白色半透明背景 */
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 游戏产品展示网格样式 */
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* 白色半透明背景 */
+    border-radius: 5px;
+}
+
+.game-item {
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.game-item:hover {
+    transform: translateY(-5px);
+}
+
+.game-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.game-title {
+    margin: 10px 0;
+}
+
+/* 新闻资讯网格样式 */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* 白色半透明背景 */
+    border-radius: 5px;
+}
+
+.news-item {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+}
+
+.news-img {
+    width: 40%;
+    border-radius: 5px 0 0 5px;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 15px;
+    width: 60%;
+}
+
+.news-title {
+    margin: 0;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #0056b3;
+}
+
+/* 联系我们样式 */
+#contact {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* 白色半透明背景 */
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+}
+
+/* 页脚样式 */
+footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+section h2 {
+    text-align: center;
+}
